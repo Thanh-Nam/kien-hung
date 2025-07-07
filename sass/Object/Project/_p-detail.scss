@@ -1,0 +1,45 @@
+.p-detail {
+    padding: 30px 0;
+    @include mq(md) {
+        padding: 20px 0;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 24px;
+        box-shadow: 0 3px 6px -4px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+        @include mq(md) {
+            padding: 12px;
+        }
+        h2 {
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 40px;
+            margin-bottom: 20px;
+            @include mq(md) {
+                font-size: 28px;
+                line-height: 30px;
+                margin-bottom: 12px;
+            }
+        }
+        h3 {
+            font-size: 28px;
+            line-height: 34px;
+            font-weight: 700;
+            @include mq(md) {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+            @include mq(md) {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+}

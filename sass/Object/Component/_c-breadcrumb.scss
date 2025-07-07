@@ -1,0 +1,51 @@
+.c-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    @include mq(md) {
+        gap: 30px;
+    }
+    a {
+        position: relative;
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        transition: all .3s ease-out;
+        @include mq(md) {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: calc(100% + 12px);
+            width: 20px;
+            height: 20px;
+            background-image: url(/assets/images/chevrons-right.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            @include mq(md) {
+                left: calc(100% + 6px);
+            }
+        }
+    }
+
+    span {
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        @include mq(md) {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}

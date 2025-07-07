@@ -1,0 +1,85 @@
+.p-about {
+    padding: 120px 0;
+    @include mq(lg) {
+        padding: 80px 0;
+    }
+    @include mq(md) {
+        padding: 60px 0;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        @include mq(md) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__text {
+        flex: 1;
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @include mq(md) {
+            padding-right: 0;
+            gap: 10px;
+        }
+    }
+
+    &__sub {
+        color: #5BCCDE;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 32px; 
+        @include mq(md) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__title {
+        color: #486A6F;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 48px;
+        @include mq(md) {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+
+    &__des {
+        color: #678C92;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 32px;
+        @include mq(md) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        flex-shrink: 0;
+        margin-left: 20px;
+        margin-top: 20px;
+        background: linear-gradient(42deg, #C6DBFF 0%, #E1EBFA 52.25%);
+        @include mq(md) {
+            width: 100%;
+            margin: 0;
+
+        }
+        img {
+            position: relative;
+            bottom: 20px;
+            right: 20px;
+            @include mq(md) {
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}

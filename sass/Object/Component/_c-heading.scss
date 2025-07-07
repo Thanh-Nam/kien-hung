@@ -1,0 +1,15 @@
+.c-heading {
+    color: #486A6F;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px; 
+    @include mq(lg) {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    @include mq(md) {
+        font-size: 26px;
+        line-height: 30px;
+    }
+}

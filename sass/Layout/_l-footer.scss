@@ -1,0 +1,148 @@
+.l-footer {
+    padding-top: 50px;
+    border-top: 1px solid #979797;
+    @include mq(md) {
+        padding-top: 30px;
+    }
+    &__logo {
+        width: 33%;
+        @include mq(md) {
+            margin: auto;
+        }
+        img {
+            max-width: 200px;
+        }
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        @include mq(md) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px 10px;
+        }
+    }
+
+    &__col-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    &__company {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+        @include mq(md) {
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+    &__slogan {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-top: 4px; 
+        @include mq(md) {
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 20px;
+        @include mq(md) {
+            margin-top: 10px;
+        }
+        &-item {
+            display: flex;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+            @include mq(md) {
+                font-size: 14px;
+                line-height: 18px;
+                justify-content: center;
+            }
+            span {
+                font-weight: 400;
+                margin-right: 4px;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+        @include mq(md) {
+            font-size: 18px;
+        }
+    }
+    &__menu {
+        margin-top: 20px;
+        @include mq(md) {
+            margin-top: 10px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            @include mq(md) {
+                gap: 6px;
+            }
+            li {
+                a {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    @include mq(md) {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                    svg {
+                        transition: all .3s ease-out;
+                        width: 10px;
+                    }
+                    &:hover svg {
+                        transform: translateX(4px);
+                    }
+                }
+            }
+        }
+    }
+    &__social {
+        margin-top: 20px;
+        @include mq(md) {
+            margin-top: 10px;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            @include mq(md) {
+                gap: 20px;
+            }
+        }
+    }
+
+    &__copy-right {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        padding: 20px 0;
+        border-top: 1px solid #979797;
+        @include mq(md) {
+            font-size: 14px;
+            padding: 10px 0;
+        }
+    }
+}
