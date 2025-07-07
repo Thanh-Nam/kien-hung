@@ -912,7 +912,7 @@ img {
   left: calc(100% + 12px);
   width: 20px;
   height: 20px;
-  background-image: url(/assets/images/chevrons-right.svg);
+  background-image: url(./assets/images/chevrons-right.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1759,7 +1759,7 @@ img {
 
 .p-feedback {
   position: relative;
-  background-image: url(/assets/images/bg-feedback.jpg);
+  background-image: url(./assets/images/bg-feedback.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 0;
@@ -2269,7 +2269,7 @@ img {
 
 .p-choose {
   position: relative;
-  background-image: url(/assets/images/bg-feedback.jpg);
+  background-image: url(./assets/images/bg-feedback.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2482,7 +2482,7 @@ img {
 
 .p-form {
   position: relative;
-  background-image: url(/assets/images/bg-feedback.jpg);
+  background-image: url(./assets/images/bg-feedback.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
